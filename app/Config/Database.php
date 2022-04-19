@@ -36,7 +36,7 @@ class Database extends Config
         'username' => 'root',
         'password' => '1r4q2e3w',
         'database' => 'DailyLaboratory_Coding_Test',
-        'DBDriver' => 'MySQL',
+        'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),
