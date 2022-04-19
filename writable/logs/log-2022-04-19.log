@@ -1,0 +1,133 @@
+CRITICAL - 2022-04-19 00:45:10 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-19 00:45:52 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-19 00:45:58 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-19 00:46:06 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-19 00:46:24 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-19 00:46:29 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-19 00:47:48 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-19 00:49:00 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-19 00:49:06 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-19 00:50:46 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-19 00:51:10 --> Invalid file: welcome_message.php
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Common.php(1089): CodeIgniter\View\View->render()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Home.php(9): view()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-19 00:55:09 --> Undefined property: App\Controllers\Map::$load
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\map.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Map->index()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-04-19 00:55:55 --> Undefined property: App\Controllers\Map::$load
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\map.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Map->index()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-04-19 00:55:59 --> Undefined property: App\Controllers\Map::$load
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\map.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Map->index()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#6 {main}
