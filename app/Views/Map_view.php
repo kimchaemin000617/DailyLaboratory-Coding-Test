@@ -71,6 +71,12 @@
 
         var map = new kakao.maps.Map(mapContainer, mapOption); // 지도 생성
 
+        // 지도를 클릭한 위치에 표출할 마커입니다
+        marker = new kakao.maps.Marker();
+
+        // 지도에 마커를 표시합니다
+        marker.setMap(map);
+
         // HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
         if (navigator.geolocation) {
 
@@ -81,19 +87,18 @@
                     lon = position.coords.longitude; // 경도
 
                 var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
-                    message = '<div style="padding:5px;">현재 위치입니다.</div>'; // 인포윈도우에 표시될 내용입니다
+                    infoMessage = '<div style="padding:5px;">현재 위치입니다.</div>'; // 인포윈도우에 표시될 내용입니다
 
                 // 마커와 인포윈도우를 표시합니다
-                displayMarker(locPosition, message);
+                displayMarker(locPosition, infoMessage);
 
+                var message = '현재 선택된 위치의 위도는 ' + lat + ' 이고, ';
+                message += '경도는 ' + lon + ' 입니다';
+
+                var resultDiv = document.getElementById('clickLatlng');
+                resultDiv.innerHTML = message;
             });
 
-        } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
-
-            var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),
-                message = 'geolocation을 사용할수 없어요..'
-
-            displayMarker(locPosition, message);
         }
 
         // 지도에 마커와 인포윈도우를 표시하는 함수입니다
@@ -120,15 +125,6 @@
             // 지도 중심좌표를 접속위치로 변경합니다
             map.setCenter(locPosition);
         }
-
-        // 지도를 클릭한 위치에 표출할 마커입니다
-        marker = new kakao.maps.Marker({
-            // 지도 중심좌표에 마커를 생성합니다 
-            position: map.getCenter()
-        });
-
-        // 지도에 마커를 표시합니다
-        marker.setMap(map);
 
         // 지도에 클릭 이벤트를 등록합니다
         // 지도를 클릭하면 마지막 파라미터로 넘어온 함수를 호출합니다
@@ -163,7 +159,7 @@
         // pagination.js
         $(function() {
 
-            // 리스트의 마커를 저장하는 배열
+            // place_list의 마커를 저장하는 배열
             markers = [];
             let container = $('#pagination');
             container.pagination({
@@ -197,7 +193,7 @@
                         markers.push(marker);
                     });
 
-                    dataHtml += '</ㅕl>';
+                    dataHtml += '</ul>';
                     $("#place_list").html(dataHtml);
                 }
             })
