@@ -11,7 +11,7 @@ class Map extends BaseController
     {
         $model = model(Map_model::class);
 
-        $data['place'] = $model->getPlace($slug);
+        $data['place_list'] = $model->getPlaceList($slug);
     }
     
     public function index()
@@ -20,7 +20,7 @@ class Map extends BaseController
         $model = model(Map_model::class);
 
         $data = [
-            'place'  => $model->getPlace(),
+            'place_list'  => $model->getPlaceList(),
         ];
         echo view('Map_view', $data);
     }

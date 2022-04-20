@@ -11,7 +11,7 @@ class Map_model extends Model
 
     protected $useAutoIncrement = true;
 
-    public function getPlace($slug = false)
+    public function getPlaceList($slug = false)
     {
         if ($slug === false) {
             return $this->findAll();

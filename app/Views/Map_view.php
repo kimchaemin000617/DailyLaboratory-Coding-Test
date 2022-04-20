@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- pagination.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
+
     <title>DailyLaboratory_Coding_Test</title>
     <style>
         .container {
@@ -32,21 +39,35 @@
             border-radius: 4px;
             padding: 0px 10px;
         }
+
+        .map_list {
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="section">
+            <!-- 지도 -->
             <div id="map" style="width:700px;height:700px;"></div>
-            <div id="clickLatlng">현재 선택된 위치는 "데일리레보라토리" 입니다.</div>
-            <?php foreach ($place as $place_item): ?>
-            <?= esc($place_item['name']) ?>
-            <?php endforeach ?>
+            <div style="display:flex;flex-direction:column;align-items:center;">
+                <!-- pagination.js를 이용한 장소 목록 출력 -->
+                <span id="place_list"></span>
+                <!-- pagination.js를 이용한 pagination 출력 -->
+                <div id="pagination"></div>
+            </div>
         </div>
+        <!-- 현재 선택된 위치의 위/경도 출력 -->
+        <div id="clickLatlng">현재 위치는 "데일리레보라토리" 입니다.</div>
     </div>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=88aa16a70acb90dc881dd869ae25b1b2&libraries=services,clusterer,drawing"></script>
     <script>
+        // 마커 클러스터링을 담당하는 객체
+        var clusterer = new kakao.maps.MarkerClusterer({
+            map: map,
+        });
+
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
             mapOption = {
                 center: new kakao.maps.LatLng(36.356338813967255, 127.36444156613784), // 지도의 중심좌표
@@ -79,25 +100,63 @@
 
             var resultDiv = document.getElementById('clickLatlng');
             resultDiv.innerHTML = message;
-
-            infowindow.setContent;
-            infowindow.open();
         });
 
-        // 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
-        // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-        var iwContent = '<div class="infoWindow" style="display:flex;">명칭:<input style="margin-left:5px;margin-right:5px;"/><button style="padding:5px;">데이터 추가</button></div>'
-        // 인포윈도우를 생성합니다
+        function markerSet(Lat, Lng) {
+            // 마커가 표시될 위치입니다 
+            var markerPosition = new kakao.maps.LatLng(Lat, Lng);
 
-        var infowindow = new kakao.maps.InfoWindow({
-            content: iwContent,
-        });
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+        }
 
-        // 마커에 클릭이벤트를 등록합니다
-        kakao.maps.event.addListener(marker, 'click', function() {
-            // 마커 위에 인포윈도우를 표시합니다
-            infowindow.open(map, marker);
-        });
+        // php의 place_list 데이터 가져오기
+        var place_list = <?php echo json_encode($place_list); ?>;
+
+        // pagination.js
+        $(function() {
+
+            // 리스트의 마커를 저장하는 배열
+            markers = [];
+            let container = $('#pagination');
+            container.pagination({
+                // 한 페이지 당 출력할 아이템 개수
+                pageSize: 8,
+                dataSource: place_list,
+                callback: function(data, pagination) {
+
+                    // 이전 리스트의 마커 삭제
+                    for (var i = 0; i < markers.length; i++) {
+                        markers[i].setMap(null);
+                    }
+
+                    var dataHtml = '<ul>';
+
+                    $.each(data, function(index, item) {
+
+                        dataHtml += '<li> 명칭:' + item.name;
+                        dataHtml += '<div style="margin-bottom: 10px;">주소:' + item.address + '</div></li>';
+
+                        // 마커가 표시될 위치입니다 
+                        var markerPosition = new kakao.maps.LatLng(item.latitude, item.longitude);
+
+                        // 마커를 생성합니다
+                        var marker = new kakao.maps.Marker({
+                            position: markerPosition
+                        });
+
+                        // 마커가 지도 위에 표시되도록 설정합니다
+                        marker.setMap(map);
+                        markers.push(marker);
+                    });
+
+                    dataHtml += '</ㅕl>';
+                    $("#place_list").html(dataHtml);
+                }
+            })
+        })
     </script>
 </body>
 
