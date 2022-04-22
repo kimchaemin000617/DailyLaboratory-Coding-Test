@@ -7,16 +7,9 @@ use CodeIgniter\Model;
 class Map_model extends Model
 {
     protected $table = 'place';
-    protected $primaryKey = 'id';
 
-    protected $useAutoIncrement = true;
-
-    public function getPlaceList($slug = false)
+    public function getPlaceList()
     {
-        if ($slug === false) {
-            return $this->findAll();
-        }
-
-        return $this->where(['slug' => $slug])->first();
+        return $this->findAll();
     }
 }

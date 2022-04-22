@@ -6,19 +6,12 @@ use App\Models\Map_model;
 
 class Map extends BaseController
 {
-
-    public function view($slug = null)
-    {
-        $model = model(Map_model::class);
-
-        $data['place_list'] = $model->getPlaceList($slug);
-    }
-    
     public function index()
     {
 
         $model = model(Map_model::class);
 
+        // Map_view에 place_list 넘기기
         $data = [
             'place_list'  => $model->getPlaceList(),
         ];

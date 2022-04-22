@@ -1,0 +1,40 @@
+CRITICAL - 2022-04-21 20:48:44 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::where(), 0 passed in C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Model.php on line 728 and at least 1 expected
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Model.php(728): CodeIgniter\Database\BaseBuilder->where()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Models\Map_model.php(16): CodeIgniter\Model->__call()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Map.php(15): App\Models\Map_model->getPlaceList()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Map->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-21 20:49:12 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::where(), 0 passed in C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Model.php on line 728 and at least 1 expected
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Model.php(728): CodeIgniter\Database\BaseBuilder->where()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Models\Map_model.php(16): CodeIgniter\Model->__call()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Map.php(15): App\Models\Map_model->getPlaceList()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Map->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-21 20:49:16 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::where(), 0 passed in C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Model.php on line 728 and at least 1 expected
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Model.php(728): CodeIgniter\Database\BaseBuilder->where()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Models\Map_model.php(16): CodeIgniter\Model->__call()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Map.php(15): App\Models\Map_model->getPlaceList()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Map->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}
+CRITICAL - 2022-04-21 20:49:17 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::where(), 0 passed in C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Model.php on line 728 and at least 1 expected
+#0 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Model.php(728): CodeIgniter\Database\BaseBuilder->where()
+#1 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Models\Map_model.php(16): CodeIgniter\Model->__call()
+#2 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\app\Controllers\Map.php(15): App\Models\Map_model->getPlaceList()
+#3 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(832): App\Controllers\Map->index()
+#4 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\User\Desktop\programing\work\php\dailylaboratory_coding_test\system\Commands\Server\rewrite.php(43): require_once('...')
+#8 {main}

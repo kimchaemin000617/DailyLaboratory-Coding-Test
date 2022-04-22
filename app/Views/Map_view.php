@@ -61,6 +61,8 @@
         <!-- 현재 선택된 위치의 위/경도 출력 -->
         <div id="clickLatlng">현재 선택된 위치는 "데일리레보라토리" 입니다.</div>
     </div>
+
+    <!-- 카카오 맵 api -->
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=88aa16a70acb90dc881dd869ae25b1b2&libraries=services,clusterer,drawing"></script>
     <script>
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
@@ -86,8 +88,11 @@
                 var lat = position.coords.latitude, // 위도
                     lon = position.coords.longitude; // 경도
 
-                var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
-                    infoMessage = '<div style="padding:5px;">현재 위치입니다.</div>'; // 인포윈도우에 표시될 내용입니다
+                // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+                var locPosition = new kakao.maps.LatLng(lat, lon),
+
+                    // 인포윈도우에 표시될 내용입니다
+                    infoMessage = '<div style="padding:5px;">현재 위치입니다.</div>';
 
                 // 마커와 인포윈도우를 표시합니다
                 displayMarker(locPosition, infoMessage);
@@ -95,6 +100,7 @@
                 var message = '현재 선택된 위치의 위도는 ' + lat + ' 이고, ';
                 message += '경도는 ' + lon + ' 입니다';
 
+                // 지정된 div에 message 삽입
                 var resultDiv = document.getElementById('clickLatlng');
                 resultDiv.innerHTML = message;
             });
@@ -110,7 +116,8 @@
                 position: locPosition
             });
 
-            var iwContent = message, // 인포윈도우에 표시할 내용
+            // 인포윈도우에 표시할 내용
+            var iwContent = message,
                 iwRemoveable = true;
 
             // 인포윈도우를 생성합니다
@@ -139,6 +146,7 @@
             var message = '현재 선택된 위치의 위도는 ' + latlng.getLat() + ' 이고, ';
             message += '경도는 ' + latlng.getLng() + ' 입니다';
 
+            // 지정된 div에 message 삽입
             var resultDiv = document.getElementById('clickLatlng');
             resultDiv.innerHTML = message;
         });
@@ -163,9 +171,14 @@
             markers = [];
             let container = $('#pagination');
             container.pagination({
+
                 // 한 페이지 당 출력할 아이템 개수
                 pageSize: 8,
+
+                // 출력할 아이템 배열
                 dataSource: place_list,
+
+                // 출력
                 callback: function(data, pagination) {
 
                     // 이전 리스트의 마커 삭제
